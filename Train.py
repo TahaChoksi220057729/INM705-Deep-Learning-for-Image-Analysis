@@ -153,7 +153,7 @@ def main():
     )
 
     wandb = None
-    use_wandb = False
+    use_wandb = True
 
     if args.use_wandb:
         try:
