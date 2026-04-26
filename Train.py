@@ -153,7 +153,7 @@ def main():
     )
 
     wandb = None
-    use_wandb = True
+    use_wandb = False
 
     if args.use_wandb:
         try:
@@ -181,7 +181,7 @@ def main():
     }
 
     for epoch in range(1, args.epochs + 1):
-        model.train()
+        model.train() 
 
         epoch_losses = []
 
